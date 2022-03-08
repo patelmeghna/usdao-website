@@ -1,0 +1,48 @@
+@import "../variables";
+
+.footer {
+    padding: 0 170px;
+    background: #242130;
+
+    @media (max-width: 1440px) {
+        padding: 0 110px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 75px;
+    }
+
+    &-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+
+.footer-about {
+    height: 100%;
+    text-align: center;
+    background: #181524;
+    padding: 75px 25px;
+
+    .logo {
+        img {
+            width: 100px;
+        }
+    }
+}
+
+.footer-content {
+    font-size: 14px;
+    line-height: 18px;
+    color: $secondary;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.footer-link {
+    font-size: 14px;
+    color: $secondary;
+    &-wrap {
+        padding: 50px 30px;
+    }
+}

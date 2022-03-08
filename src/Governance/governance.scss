@@ -1,0 +1,138 @@
+@import '../variables';
+
+
+
+.decentralize {
+    padding: 150px 170px;
+
+    &-box {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 134px 68px 74px;
+        position: relative;
+
+        background: linear-gradient(101.71deg, rgba(255, 255, 255, 0.1) 0.89%, rgba(255, 255, 255, 0.16) 73.38%);
+        box-shadow: 0px 10px 24px -1px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(34px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 30px;
+
+        p {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.box-title-wrap {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        position: absolute;
+    left: 18%;
+    top: -12%;
+    width: fit-content;
+
+    background: linear-gradient(101.71deg, rgba(255, 255, 255, 0.1) 0.89%, rgba(255, 255, 255, 0.16) 73.38%);
+    box-shadow: 0px 10px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(34px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 30px;
+    padding: 46px 68px;
+
+    p {
+        font-size: 48px;
+        font-weight: 700;
+        white-space: nowrap;
+        margin: 0;
+    }
+}
+
+.icon-box {
+    position: relative;
+    /* Note: backdrop-filter has minimal browser support */
+    padding: 133px 55px 55px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    // width: 80%;
+}
+
+.icon-wrap {
+    position: absolute;
+    left: 10.73%;
+    top: -16.02%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 32px 41px;
+    background: $dark-bg;
+    border-radius: 30px;
+}
+
+.gov-about {
+    padding: 150px 250px;
+}
+
+.icon-title {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: $primary;
+}
+
+.icon-content {
+    font-size: 26px;
+    line-height: 42px;
+}
+
+.proposal-desc {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.desc-wrap {
+    margin-bottom: 80px;
+}
+
+.proposal {
+    padding: 125px 250px;
+}
+
+.parameter-box{
+    background: linear-gradient(101.71deg, rgba(255, 255, 255, 0.1) 0.89%, rgba(255, 255, 255, 0.16) 73.38%);
+    box-shadow: 0px 10px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(34px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 60px;
+    height: 650px;
+    /* Note: backdrop-filter has minimal browser support */
+    position: relative;
+    border-radius: 30px;
+
+    .btn {
+        position: absolute;
+        top: 80%;
+
+        &-border-gradient {
+            background: #3b3846;
+            padding: 21px 55px;
+            font-size: 24px;
+            font-weight: 600;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}
+
+.param-title {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.param-desc {
+    font-size: 24px;
+    line-height: 38px;
+}

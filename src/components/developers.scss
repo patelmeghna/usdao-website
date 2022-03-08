@@ -1,0 +1,29 @@
+.developers {
+    padding: 50px 170px;
+
+    @media (max-width: 1024px) {
+        padding: 50px 115px;
+    }
+
+     @media (max-width: 600px) {
+         padding: 50px 30px;
+     }
+}
+
+#small-shape {
+    animation: width infinite .5s;
+}
+
+@keyframes width {
+    0% {
+        width: 65.2889px;
+    }
+
+    50% {
+        width: 180px;
+    }
+
+    100% {
+        width: 65.2889px;
+    }
+}

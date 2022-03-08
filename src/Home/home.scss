@@ -1,0 +1,444 @@
+@import '../variables';
+
+// ==================== begin::banner ====================
+.banner {
+    height:84vh;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    &-text {
+        width: 62%;
+
+        @media (max-width: 1280px) {
+            width: 65%;
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        p {
+            color: $primary;
+            font-size: 68px;
+            font-weight: 500;
+            line-height: 85px;
+
+            span {
+                color: #fff;
+            }
+
+            @media (max-width: 1600px) {
+                font-size: 62px;
+                list-style: 80px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 50px;
+            }
+        }
+    }
+
+    &-content {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+        color: $secondary;
+        width: 30%;
+
+        @media (max-width: 1280px) {
+            width: 40%;
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+}
+
+.square {
+    border-left: 1px solid rgba($color: #FFF, $alpha: 0.15);
+    border-right: 1px solid rgba($color: #FFF, $alpha: 0.15);
+    border-radius: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+
+    @media (max-width: 1280px) {
+        border-radius: 25px;
+    }
+
+    @media (max-width: 1280px) {
+        border-radius: 15px;
+    }
+
+    @media (max-width:600px) {
+        display: none;
+    }
+
+    &.square-1 {
+        width: 96px;
+        height: 96px;
+        left: 426.88px;
+        top: 95px;
+
+        background: linear-gradient(101.71deg, rgba(255, 255, 255, 0.1) 0.89%, rgba(255, 255, 255, 0.16) 73.38%);
+        box-shadow: 0px 10px 24px -1px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(34px);
+        animation: sqaure1 infinite 5s;
+        animation-delay: 2s;
+
+        @media (max-width: 1280px) {
+            width: 90px;
+            height: 90px;
+            left: 295px;
+        }
+
+        @media (max-width: 1024px) {
+            left: 180px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &.square-2 {
+        width: 132px;
+        height: 132px;
+        right: 93px;
+        top: 138px;
+
+        background: linear-gradient(101.71deg, rgba(255, 255, 255, 0.33) 0.89%, rgba(255, 255, 255, 0.1) 73.38%);
+        box-shadow: 0px 10px 24px -1px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(34px);
+        animation: sqaure2 infinite 5s;
+
+        @media (max-width: 1024px) {
+            right: 50px;
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
+
+.dao-square {
+    position: absolute;
+    left: 88px;
+    top: 268.15px;
+    animation: dao infinite 5s;
+    animation-delay: 1s;
+
+    @media (max-width: 1280px) {
+        left: 38px;
+    }
+
+    @media (max-width: 1024px) {
+        left: 15px;
+        width: 200px;
+    }
+
+    @media (max-width: 768px) {
+        left: -56px;
+    }
+
+    @media (max-width:600px) {
+        display: none;
+    }
+}
+
+.asset-square {
+    position: absolute;
+    left: 269.83px;
+    top: 520.43px;
+    animation: asset infinite 5s;
+    animation-delay: 2s;
+
+    @media (max-width: 1280px) {
+        left: 175px;
+    }
+
+    @media (max-width: 1024px) {
+        left: 100px;
+        width: 230px;
+    }
+
+    @media (max-width:600px) {
+        display: none;
+    }
+}
+
+.usdao-square {
+    position: absolute;
+    right: 78px;
+    top: 407.97px;
+    animation: usdao infinite 5s;
+
+    @media (max-width: 1280px) {
+        right: 62px;
+        width: 320px;
+    }
+
+    @media (max-width: 1280px) {
+        right: 40px;
+        width: 260px;
+    }
+
+    @media (max-width:600px) {
+        display: none;
+    }
+}
+
+@keyframes sqaure1 {
+    0% {
+        top: 95px;
+    }
+    50% {
+        top: 70px;
+    }
+    100% {
+        top: 95px;
+    }
+}
+
+@keyframes sqaure2 {
+    0% {
+        top: 138px;
+    }
+
+    50% {
+        top: 110px;
+    }
+
+    100% {
+        top: 138px;
+    }
+}
+
+@keyframes dao {
+    0% {
+        top: 248.15px;
+    }
+
+    50% {
+        top: 220px;
+    }
+
+    100% {
+        top: 248.15px;
+    }
+}
+
+@keyframes asset {
+    0% {
+        top: 480.43px;
+    }
+
+    50% {
+        top: 460px;
+    }
+
+    100% {
+        top: 480.43px;
+    }
+}
+
+@keyframes usdao {
+    0% {
+        top: 380.97px;
+    }
+
+    50% {
+        top: 370px;
+    }
+
+    100% {
+        top: 380.97px;
+    }
+}
+
+// ==================== end::banner ====================
+
+// ==================== begin::wallet ====================
+.wallet {
+    padding: 100px 170px;
+
+    @media (max-width: 1280px) {
+        padding: 100px 80px;
+    }
+
+     @media (max-width: 1280px) {
+         padding: 25px 30px;
+     }
+}
+
+.coins {
+    animation: scale infinite 3s;
+
+    @media (max-width: 1280px) { 
+        width: 450px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 370px;
+    }
+}
+
+.coming-soon-text {
+    color: $primary;
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+// ==================== end::wallet ====================
+
+// ==================== begin::developrs ====================
+
+// ==================== end::developrs ====================
+
+// ==================== begin::token ====================
+.tokens {
+    padding: 100px 195px;
+
+    @media (max-width: 1280px) {
+        padding: 105px 110px;
+    }
+
+    @media (max-width: 768px) {
+        img {
+            width: 150px;
+        }
+    }
+}
+
+.token {
+    &-wrap {
+        margin-top: 20px;
+    }
+
+    &-title {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &-content {
+        font-size: 16px;
+        color: $secondary;
+        margin-bottom: 20px;
+        width: 65%;
+
+        @media (max-width: 1024px) {
+            width: 80%;
+        }
+    }
+}
+// ==================== end::token ====================
+
+
+// ==================== begin::protocol ====================
+.protocol {
+    padding: 135px 171px;
+    background: #242130;
+    position: relative;
+
+    @media (max-width: 1024px) {
+        padding: 115px 95px;
+    }
+
+    &-row {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.bg-square {
+    position: absolute;
+    width: 869.84px;
+    height: 868.59px;
+    left: -40%;
+    top: -24%;
+    background: linear-gradient(101.69deg, rgba(255, 255, 255, 0.1) 50.03%, rgba(255, 255, 255, 0.16) 122.41%);
+    box-shadow: 0px 10px 24px rgb(0 0 0 / 20%);
+    -webkit-backdrop-filter: blur(34px);
+    backdrop-filter: blur(34px);
+    border-radius: 15px;
+    transform: rotate(45deg);
+    z-index: 0;
+
+    @media (max-width: 1800px) {
+        left: -42%;
+    }
+
+    @media (max-width: 1600px) {
+        width: 750px;
+        height: 750px;
+        left: -36%;
+        top: -6%;
+    }
+
+    @media (max-width: 1440px) {
+        width: 690px;
+        height: 690px;
+        left: -35%;
+        top: -2%;
+    }
+
+    @media (max-width: 1280px) {
+        left: -39%;
+    }
+
+    @media (max-width: 1024px) {
+        left: -51%;
+        top: -5%;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.list-icon {
+    position: absolute;
+    left: -20px;
+    top: -10px;
+}
+
+.list-wrap {
+    position: relative;
+    padding-left: 48px;
+}
+// ==================== end::protocol ====================
+
+// ==================== begin::advantage ====================
+.advantage {
+    padding: 150px 170px;
+
+    @media (max-width: 1024px) {
+        padding: 110px 130px;
+    }
+}
+// ==================== end::advantage ====================
+
+
+
